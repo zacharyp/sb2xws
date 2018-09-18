@@ -1,0 +1,554 @@
+{
+  "id": "8d86dd8d-1ff8-4e07-a9cb-37582fe0655f",
+  "name": "Boba Fenn L3-37",
+  "description": "",
+  "deck": [
+    {
+      "pilot_card": {
+        "id": 228,
+        "faction_id": 3,
+        "card_set_ids": [
+          13
+        ],
+        "card_type_id": 1,
+        "available_actions": [
+          {
+            "id": 6667,
+            "base_action_id": 9,
+            "related_action_id": null,
+            "base_action_side_effect": null,
+            "related_action_side_effect": null
+          },
+          {
+            "id": 6668,
+            "base_action_id": 5,
+            "related_action_id": null,
+            "base_action_side_effect": null,
+            "related_action_side_effect": null
+          },
+          {
+            "id": 6669,
+            "base_action_id": 8,
+            "related_action_id": null,
+            "base_action_side_effect": "stress",
+            "related_action_side_effect": null
+          }
+        ],
+        "statistics": [
+          {
+            "id": 7579,
+            "statistic_id": 10,
+            "value": "2",
+            "recurring": false
+          },
+          {
+            "id": 7580,
+            "statistic_id": 1,
+            "value": "2",
+            "recurring": false
+          },
+          {
+            "id": 7581,
+            "statistic_id": 2,
+            "value": "2",
+            "recurring": false
+          },
+          {
+            "id": 7582,
+            "statistic_id": 3,
+            "value": "2",
+            "recurring": false
+          }
+        ],
+        "available_upgrades": [
+          1,
+          8,
+          14
+        ],
+        "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_228.jpg",
+        "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_228.png",
+        "name": "L3-37",
+        "subtitle": "Droid Revolutionary",
+        "ability_text": "If you are not shielded, decrease the difficulty of your bank (<leftbank> and <rightbank>) maneuvers.<return><shipability><sabold>Co-Pilot:</sabold> While you are docked, your carrier ship has your pilot ability in addition to its own.</shipability>",
+        "cost": "22",
+        "ship_ability_text": "",
+        "ship_size": 1,
+        "force_side": null,
+        "initiative": 2,
+        "ffg_id": "XW_P_228",
+        "is_unique": true,
+        "ship_type": 48
+      },
+      "slots": [
+        {
+          "id": 277,
+          "card_set_ids": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "card_type_id": 2,
+          "weapon_no_bonus": false,
+          "weapon_range": null,
+          "upgrade_types": [
+            8
+          ],
+          "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_48.jpg",
+          "name": "Tactical Officer",
+          "ability_text": "<flavor>In the chaos of a starfighter battle, a single order can mean the difference between a victory and a massacre.</flavor>",
+          "cost": "2",
+          "is_unique": false,
+          "available_actions": [
+            {
+              "id": 5838,
+              "base_action_id": 8,
+              "related_action_id": null,
+              "base_action_side_effect": null,
+              "related_action_side_effect": null
+            }
+          ],
+          "statistics": [],
+          "restrictions_raw": "Red <coordinate>",
+          "restrictions": [
+            [
+              {
+                "type": "ACTION",
+                "kwargs": {
+                  "pk": 8,
+                  "name": "Coordinate",
+                  "side_effect_name": "STRESS"
+                }
+              }
+            ]
+          ],
+          "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_48.png",
+          "behaviours": [
+            {
+              "data": {
+                "base_action_id": 8,
+                "related_action_id": null,
+                "base_action_side_effect": null,
+                "related_action_side_effect": null
+              },
+              "type": "action_profit"
+            }
+          ]
+        }
+      ],
+      "cost": 24
+    },
+    {
+      "pilot_card": {
+        "id": 149,
+        "faction_id": 3,
+        "card_set_ids": [
+          11,
+          6
+        ],
+        "card_type_id": 1,
+        "available_actions": [
+          {
+            "id": 6378,
+            "base_action_id": 2,
+            "related_action_id": null,
+            "base_action_side_effect": null,
+            "related_action_side_effect": null
+          },
+          {
+            "id": 6379,
+            "base_action_id": 4,
+            "related_action_id": null,
+            "base_action_side_effect": null,
+            "related_action_side_effect": null
+          },
+          {
+            "id": 6380,
+            "base_action_id": 6,
+            "related_action_id": null,
+            "base_action_side_effect": "stress",
+            "related_action_side_effect": null
+          },
+          {
+            "id": 6381,
+            "base_action_id": 1,
+            "related_action_id": null,
+            "base_action_side_effect": null,
+            "related_action_side_effect": null
+          }
+        ],
+        "statistics": [
+          {
+            "id": 7256,
+            "statistic_id": 10,
+            "value": "3",
+            "recurring": false
+          },
+          {
+            "id": 7257,
+            "statistic_id": 14,
+            "value": "3",
+            "recurring": false
+          },
+          {
+            "id": 7258,
+            "statistic_id": 1,
+            "value": "2",
+            "recurring": false
+          },
+          {
+            "id": 7259,
+            "statistic_id": 2,
+            "value": "6",
+            "recurring": false
+          },
+          {
+            "id": 7260,
+            "statistic_id": 3,
+            "value": "4",
+            "recurring": false
+          }
+        ],
+        "available_upgrades": [
+          1,
+          3,
+          6,
+          8,
+          12,
+          13,
+          14,
+          15
+        ],
+        "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_149.jpg",
+        "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_149.png",
+        "name": "Boba Fett",
+        "subtitle": "Notorious Bounty Hunter",
+        "ability_text": "While you defend or perform an attack, you may reroll 1 of your dice for each enemy ship at range 0–1.",
+        "cost": "80",
+        "ship_ability_text": null,
+        "ship_size": 2,
+        "force_side": null,
+        "initiative": 5,
+        "ffg_id": "XW_P_149",
+        "is_unique": true,
+        "ship_type": 10
+      },
+      "slots": [
+        {
+          "id": 232,
+          "card_set_ids": [
+            4,
+            5,
+            6
+          ],
+          "card_type_id": 2,
+          "weapon_no_bonus": false,
+          "weapon_range": null,
+          "upgrade_types": [
+            1
+          ],
+          "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_3.jpg",
+          "name": "Debris Gambit",
+          "ability_text": "While you perform a red <evade> action, if there is an obstacle at range 0–1, treat the action as white instead.",
+          "cost": "2",
+          "is_unique": false,
+          "available_actions": [
+            {
+              "id": 5831,
+              "base_action_id": 3,
+              "related_action_id": null,
+              "base_action_side_effect": "stress",
+              "related_action_side_effect": null
+            }
+          ],
+          "statistics": [],
+          "restrictions_raw": "Small or medium ship",
+          "restrictions": [
+            [
+              {
+                "type": "SHIP_SIZE",
+                "kwargs": {
+                  "ship_size_name": "SMALL"
+                }
+              },
+              {
+                "type": "SHIP_SIZE",
+                "kwargs": {
+                  "ship_size_name": "MEDIUM"
+                }
+              }
+            ]
+          ],
+          "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_3.png",
+          "behaviours": [
+            {
+              "data": {
+                "base_action_id": 3,
+                "related_action_id": null,
+                "base_action_side_effect": "stress",
+                "related_action_side_effect": null
+              },
+              "type": "action_profit"
+            }
+          ]
+        },
+        {
+          "id": 275,
+          "card_set_ids": [
+            11,
+            4,
+            5,
+            6
+          ],
+          "card_type_id": 2,
+          "weapon_no_bonus": false,
+          "weapon_range": null,
+          "upgrade_types": [
+            8
+          ],
+          "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_46.jpg",
+          "name": "Perceptive Copilot",
+          "ability_text": "After you perform a <focus> action, gain 1 focus token.",
+          "cost": "10",
+          "is_unique": false,
+          "available_actions": [],
+          "statistics": [],
+          "restrictions_raw": "",
+          "restrictions": [],
+          "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_46.png",
+          "behaviours": []
+        },
+        {
+          "id": 375,
+          "card_set_ids": [
+            11
+          ],
+          "card_type_id": 2,
+          "weapon_no_bonus": false,
+          "weapon_range": null,
+          "upgrade_types": [
+            15
+          ],
+          "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_150.jpg",
+          "name": "<italic>Marauder</italic>",
+          "ability_text": "While you perform a primary <reararc> attack, you may reroll 1 attack die.<return>Add <gunner> slot.",
+          "cost": "3",
+          "is_unique": true,
+          "available_actions": [],
+          "statistics": [],
+          "restrictions_raw": "Scum, <untalic>Firespray</untalic>-class patrol craft",
+          "restrictions": [
+            [
+              {
+                "type": "FACTION",
+                "kwargs": {
+                  "pk": 3,
+                  "name": "Scum and Villainy"
+                }
+              }
+            ],
+            [
+              {
+                "type": "SHIP_TYPE",
+                "kwargs": {
+                  "pk": 10,
+                  "raw_name": "Firespray-class Patrol Craft"
+                }
+              }
+            ]
+          ],
+          "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_150.png",
+          "behaviours": [
+            {
+              "data": {
+                "quantity": 1,
+                "upgrade_type": 16
+              },
+              "type": "slot_profit"
+            }
+          ]
+        },
+        {
+          "id": 389,
+          "card_set_ids": [
+            13
+          ],
+          "card_type_id": 2,
+          "weapon_no_bonus": false,
+          "weapon_range": null,
+          "upgrade_types": [
+            16
+          ],
+          "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_163.jpg",
+          "name": "Han Solo",
+          "ability_text": "Before you engage, you may perform a red <focus> action.",
+          "cost": "4",
+          "is_unique": true,
+          "available_actions": [],
+          "statistics": [],
+          "restrictions_raw": "Scum",
+          "restrictions": [
+            [
+              {
+                "type": "FACTION",
+                "kwargs": {
+                  "pk": 3,
+                  "name": "Scum and Villainy"
+                }
+              }
+            ]
+          ],
+          "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_163.png",
+          "behaviours": []
+        }
+      ],
+      "cost": 99
+    },
+    {
+      "pilot_card": {
+        "id": 155,
+        "faction_id": 3,
+        "card_set_ids": [
+          12,
+          6
+        ],
+        "card_type_id": 1,
+        "available_actions": [
+          {
+            "id": 6402,
+            "base_action_id": 2,
+            "related_action_id": null,
+            "base_action_side_effect": null,
+            "related_action_side_effect": null
+          },
+          {
+            "id": 6403,
+            "base_action_id": 4,
+            "related_action_id": null,
+            "base_action_side_effect": null,
+            "related_action_side_effect": null
+          },
+          {
+            "id": 6404,
+            "base_action_id": 5,
+            "related_action_id": 2,
+            "base_action_side_effect": null,
+            "related_action_side_effect": "stress"
+          },
+          {
+            "id": 6405,
+            "base_action_id": 1,
+            "related_action_id": 2,
+            "base_action_side_effect": null,
+            "related_action_side_effect": "stress"
+          }
+        ],
+        "statistics": [
+          {
+            "id": 7286,
+            "statistic_id": 10,
+            "value": "3",
+            "recurring": false
+          },
+          {
+            "id": 7287,
+            "statistic_id": 1,
+            "value": "3",
+            "recurring": false
+          },
+          {
+            "id": 7288,
+            "statistic_id": 2,
+            "value": "4",
+            "recurring": false
+          }
+        ],
+        "available_upgrades": [
+          1,
+          5
+        ],
+        "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_P_155.jpg",
+        "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_155.png",
+        "name": "Fenn Rau",
+        "subtitle": "Skull Leader",
+        "ability_text": "<smallbody>While you defend or perform an attack, if the attack range is 1, you may roll 1 additional die.</smallbody><return><sasmall><sabold>Concordia Faceoff:</sabold> While you defend, if the attack range is 1 and you are in the attacker’s <frontarc>, change 1 result to an <evade> result.</sasmall>",
+        "cost": "68",
+        "ship_ability_text": null,
+        "ship_size": 1,
+        "force_side": null,
+        "initiative": 6,
+        "ffg_id": "XW_P_155",
+        "is_unique": true,
+        "ship_type": 36
+      },
+      "slots": [
+        {
+          "id": 235,
+          "card_set_ids": [
+            12,
+            6
+          ],
+          "card_type_id": 2,
+          "weapon_no_bonus": false,
+          "weapon_range": null,
+          "upgrade_types": [
+            1
+          ],
+          "image": "https://sb-cdn.fantasyflightgames.com/card_art/Card_art_XW_U_6.jpg",
+          "name": "Fearless",
+          "ability_text": "While you perform a <frontarc> primary attack, if the attack range is 1 and you are in the defender’s <frontarc>, you may change 1 of your results to a <hit> result.",
+          "cost": "3",
+          "is_unique": false,
+          "available_actions": [],
+          "statistics": [],
+          "restrictions_raw": "Scum",
+          "restrictions": [
+            [
+              {
+                "type": "FACTION",
+                "kwargs": {
+                  "pk": 3,
+                  "name": "Scum and Villainy"
+                }
+              }
+            ]
+          ],
+          "card_image": "https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_6.png",
+          "behaviours": []
+        }
+      ],
+      "cost": 71
+    }
+  ],
+  "game_format": {
+    "id": "7271f0fb-ec4f-4166-bcea-709cc1ee76cd",
+    "name": "Extended",
+    "description": "",
+    "game_mode": 1,
+    "maximum_squad_cost": 200,
+    "created_by": null,
+    "created_at": "2018-08-31",
+    "factions": [
+      1,
+      2,
+      3
+    ]
+  },
+  "faction": {
+    "id": 3,
+    "name": "Scum and Villainy",
+    "description": "Driven by their desire for profit, bounty hunters, mercenaries, and every variety of scum will relentlessly pursue their quarry to the farthest reaches of the galaxy. Far from the uniform ranks of the Rebellion or the Empire, these lawless renegades often inject their own style and flair into their squadrons—and they’re no stranger to using dangerous, illicit means to upgrade their ships. By playing Scum and Villainy in <italic>X-Wing Second Edition</italic>, you’ll send a clear signal that you’re out for blood and money.",
+    "icon": "https://sb-cdn.fantasyflightgames.com/factions/Scum.png",
+    "banner_mobile": "https://sb-cdn.fantasyflightgames.com/factions/banners/mobile/Scum.png",
+    "banner": "https://sb-cdn.fantasyflightgames.com/factions/banners/web/Scum.png",
+    "ship_art": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/web/ScumFactionPageImage.png",
+    "ship_art_mobile": "https://sb-cdn.fantasyflightgames.com/factions/ship_arts/mobile/ScumFactionPageImage.png"
+  },
+  "game_mode": {
+    "id": 1,
+    "name": "Extended",
+    "description": "Explore all the starfighter battles <italic>X-Wing</italic> has to offer.\r\n \r\nThe Extended game mode encompasses every component for <italic>X-Wing Second Edition</italic>, including the ships only found in the Conversion Kits. Choose a faction, then select up to 200 points of pilots and upgrade to create your squad.",
+    "art": "https://sb-cdn.fantasyflightgames.com/game_modes/ART%20UNLIMITED.png"
+  },
+  "cost": 194
+}

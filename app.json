@@ -1,0 +1,6 @@
+{
+  "name": "SquadBuilder to XWS",
+  "description": "SquadBuilder to XWS",
+  "image": "heroku/scala",
+  "addons": [ ]
+}
