@@ -1,6 +1,6 @@
 name := """sb2xws"""
 
-version := "1.0"
+version := "1.0.1"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
@@ -13,7 +13,6 @@ libraryDependencies ++= Seq(
   jdbc,
   ehcache,
   guice,
-  "org.postgresql" % "postgresql" % "9.4-1201-jdbc41",
   ws,
   json4s
 )
