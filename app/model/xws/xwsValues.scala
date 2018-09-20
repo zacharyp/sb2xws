@@ -1,6 +1,6 @@
 package model.xws
 
-case class Pilot(
+case class XWSPilot(
   name: String,
   ship: String,
   upgrades: Option[Map[String, Seq[String]]],
@@ -9,9 +9,9 @@ case class Pilot(
   vendor: Option[Map[String, Map[String, String]]]
 )
 
-case class Squadron(
+case class XWSSquadron(
   faction: String,
-  pilots: Seq[Pilot],
+  pilots: Seq[XWSPilot],
   name: Option[String],
   obstacles: Option[Seq[String]],
   damagedeck: Option[String],

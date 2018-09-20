@@ -10,8 +10,7 @@ import play.api.libs.json._
 import scala.concurrent.duration._
 import scala.concurrent.{ExecutionContext, Future}
 
-
-class Application @Inject()(cc: ControllerComponents, ws: WSClient) extends AbstractController(cc) {
+class Application @Inject()(cc: ControllerComponents, ws: WSClient, xws: Squadron2XWS) extends AbstractController(cc) {
 
   implicit val ec: ExecutionContext = scala.concurrent.ExecutionContext.global
 
@@ -22,14 +21,14 @@ class Application @Inject()(cc: ControllerComponents, ws: WSClient) extends Abst
       .addHttpHeaders("Accept" -> "application/json")
       .withRequestTimeout(10000.millis)
 
-    import model.xws.XWSWrites._
+    import model.xws.XWSLoads._
 
     complexRequest.get().map(_.body)
       .map(SquadronFormatter.parseSB)
-      .map(Squadron2XWS.convert)
+      .map(xws.convert)
       .map(s => Ok(Json.toJson(s)))
-      .recoverWith{
-        case _ => Future.successful(BadRequest(""))
+      .recoverWith {
+        case ex => Future.successful(BadRequest(ex.getMessage))
       }
   }
 

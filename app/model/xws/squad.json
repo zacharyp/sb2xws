@@ -1,0 +1,55 @@
+{
+  "description": "",
+  "faction": "scumandvillainy",
+  "name": "New Squadron",
+  "pilots": [
+    {
+      "id": "bobafett",
+      "points": 100,
+      "ship": "firesprayclasspatrolcraft",
+      "upgrades": {
+        "ept": [
+          "fearless"
+        ],
+        "crew": [
+          "perceptivecopilot"
+        ],
+        "title": [
+          "marauder"
+        ],
+        "gunner": [
+          "hansolo-gunner"
+        ]
+      }
+    },
+    {
+      "id": "fennrau",
+      "points": 71,
+      "ship": "fangfighter",
+      "upgrades": {
+        "ept": [
+          "fearless"
+        ]
+      }
+    },
+    {
+      "id": "l337-escapecraft",
+      "points": 24,
+      "ship": "escapecraft",
+      "upgrades": {
+        "crew": [
+          "tacticalofficer"
+        ]
+      }
+    }
+  ],
+  "points": 195,
+  "vendor": {
+    "yasb": {
+      "builder": "Yet Another Squad Builder 2.0",
+      "builder_url": "https://raithos.github.io/",
+      "link": "https://raithos.github.io/?f=Scum%20and%20Villainy&d=v4!se!103:121,-1,-1,54,-1,-1,-1,153:-1:-1:U.85;97:121,-1:-1:-1:;95:-1,61,-1:-1:-1:&sn=New%20Squadron&obs="
+    }
+  },
+  "version": "0.3.0"
+}
