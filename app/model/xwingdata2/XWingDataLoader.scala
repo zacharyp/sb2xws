@@ -1,15 +1,15 @@
 package model.xwingdata2
 
 import java.io.File
+import java.nio.file.Paths
 
 import javax.inject.{Inject, Singleton}
 import org.apache.commons.io.FileUtils
 import play.Environment
+import play.api.libs.json._
 
 import scala.collection.JavaConverters._
 import scala.io.Source
-import play.api.libs.json._
-
 import scala.util.Try
 
 object XWingDataLoader {
@@ -24,7 +24,7 @@ class XWingDataLoader @Inject()(env: Environment) {
   import XWingDataLoader._
 
   private def pilots(relativePath: String): List[XWD2Ship] = {
-    val pilotDir: File = env.getFile(relativePath)
+    val pilotDir: File = Paths.get(env.resource(relativePath).toURI).toFile
     val pilotFiles = FileUtils.listFiles(pilotDir, Array("json"), false).asScala
 
     pilotFiles
