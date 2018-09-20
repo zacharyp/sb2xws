@@ -1,0 +1,3 @@
+[submodule "conf/xwing-data2"]
+	path = conf/xwing-data2
+	url = git@github.com:guidokessels/xwing-data2.git
