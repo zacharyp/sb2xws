@@ -1,7 +1,7 @@
 package model.xws
 
 case class XWSPilot(
-  name: String,
+  id: String,
   ship: String,
   upgrades: Option[Map[String, Seq[String]]],
   multisection_id: Option[Int],
