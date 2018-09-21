@@ -13,6 +13,7 @@ case class XWSSquadron(
   faction: String,
   pilots: Seq[XWSPilot],
   name: Option[String],
+  description: Option[String],
   obstacles: Option[Seq[String]],
   damagedeck: Option[String],
   points: Option[Int],

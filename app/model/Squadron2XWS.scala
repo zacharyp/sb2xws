@@ -53,6 +53,7 @@ class Squadron2XWS @Inject() (env: Environment, xwingData: XWingDataLoader) {
       faction = xwsFaction(squadron.faction.id),
       pilots = xwsPilots,
       name = Some(squadron.name),
+      description = Option(squadron.description),
       obstacles = None,
       damagedeck = None,
       points = Some(squadron.cost.toInt),

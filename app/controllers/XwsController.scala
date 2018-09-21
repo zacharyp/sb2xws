@@ -10,7 +10,7 @@ import play.api.libs.json._
 import scala.concurrent.duration._
 import scala.concurrent.{ExecutionContext, Future}
 
-class Application @Inject()(cc: ControllerComponents, ws: WSClient, xws: Squadron2XWS) extends AbstractController(cc) {
+class XwsController @Inject()(cc: ControllerComponents, ws: WSClient, xws: Squadron2XWS) extends AbstractController(cc) {
 
   implicit val ec: ExecutionContext = scala.concurrent.ExecutionContext.global
 
