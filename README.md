@@ -8,7 +8,7 @@ Usage, take the UUID (unique identifier) of your squadbuilder squad, i.e the `8d
 
 
 Then go to http://sb2xws.herokuapp.com/translate/8d86dd8d-1ff8-4e07-a9cb-37582fe0655f
- (editing for your squd's UUID), and you will be presented with XWS JSON, for example:
+ (editing for your squd's UUID), and you will be presented with [XWS](https://github.com/elistevens/xws-spec) JSON, for example:
  
 ```
 {"faction":"scumandvillainy","pilots":[{"id":"l337-escapecraft","ship":"escapecraft","upgrades":{"crew":["tacticalofficer"]},"points":24},{"id":"bobafett","ship":"firesprayclasspatrolcraft","upgrades":{"crew":["perceptivecopilot"],"gunner":["hansolo-gunner"],"title":["marauder"],"ept":["debrisgambit"]},"points":99},{"id":"fennrau","ship":"fangfighter","upgrades":{"ept":["fearless"]},"points":71}],"name":"Boba Fenn L3-37","description":"","points":194}
