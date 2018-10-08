@@ -1,6 +1,6 @@
 # sb2xws
 
-Translates squadbuilder id to XWS JSON
+Translates X-wing squadbuilder id to XWS JSON
 
 ## 
 
