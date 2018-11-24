@@ -88,7 +88,7 @@ object Squadron2XWS {
     case 10 => "amd"
     case 12 => "device"
     case 13 => "illicit"
-    case 14 => "mod"
+    case 14 => "modification"
     case 15 => "title"
     case 16 => "gunner"
     case 17 => "force"
