@@ -71,11 +71,12 @@ object Squadron2XWS {
       case 3 => "scumandvillainy"
       case 4 => "resistance"
       case 5 => "firstorder"
-      case 6 => "cis"
+      case 6 => "separatistalliance"
       case 7 => "galacticrepublic"
     }
   }
 
+  // https://squadbuilder.fantasyflightgames.com/api/app-metadata/
   def xwsUpgrade(u: Int): String = u match {
     case 1 => "ept"
     case 2 => "sensor"
@@ -83,7 +84,7 @@ object Squadron2XWS {
     case 4 => "turret"
     case 5 => "torpedo"
     case 6 => "missile"
-    case 7 => "tech"
+    case 7 => ""
     case 8 => "crew"
     case 10 => "amd"
     case 12 => "device"
@@ -93,6 +94,7 @@ object Squadron2XWS {
     case 16 => "gunner"
     case 17 => "force"
     case 18 => "configuration"
+    case 19 => "tech"
   }
 
 }

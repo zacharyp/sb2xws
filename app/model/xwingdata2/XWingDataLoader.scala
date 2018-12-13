@@ -46,12 +46,15 @@ class XWingDataLoader @Inject()(env: Environment) {
   private val scumPilots: List[XWD2Ship] = extractShips("/xwing-data2/data/pilots/scum-and-villainy/")
   private val resistancePilots: List[XWD2Ship] = extractShips("/xwing-data2/data/pilots/resistance/")
   private val firstOrderPilots: List[XWD2Ship] = extractShips("/xwing-data2/data/pilots/first-order/")
+//  private val separatistAlliance: List[XWD2Ship] = extractShips("/xwing-data2/data/pilots/separatist-alliance/")
+//  private val galacticRepublic: List[XWD2Ship] = extractShips("/xwing-data2/data/pilots/galactic-republic/")
 
   /*
    * Map with key of ffg_id to value (for that pilot) of a tuple of (xwsId, shipXWS), for ease of lookup for translation
    */
   lazy val pilotMap: Map[Int, (String, String)] = {
     val allShips = rebelPilots ++ imperialPilots ++ scumPilots ++ resistancePilots ++ firstOrderPilots
+//    ++ separatistAlliance ++ galacticRepublic
 
     allShips.flatMap(ship => {
       ship.pilots.map(pilot => pilot.ffg -> (pilot.xws, ship.shipXWS()))

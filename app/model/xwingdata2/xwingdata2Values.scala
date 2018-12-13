@@ -6,7 +6,7 @@ case class XWD2Upgrade(
   xws: String,
   sides: Seq[XWD2Side]
 ) {
-  def ffg(): Option[Int] = sides.headOption.flatMap(_.ffg)
+  def ffg(): Seq[Int] = sides.flatMap(_.ffg)
 }
 
 case class XWD2Pilot(
