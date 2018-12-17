@@ -92,7 +92,7 @@ object Squadron2XWS {
     case 14 => "modification"
     case 15 => "title"
     case 16 => "gunner"
-    case 17 => "force"
+    case 17 => "force-power"
     case 18 => "configuration"
     case 19 => "tech"
   }
