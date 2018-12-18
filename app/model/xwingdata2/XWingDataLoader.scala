@@ -57,7 +57,7 @@ class XWingDataLoader @Inject()(env: Environment) {
 //    ++ separatistAlliance ++ galacticRepublic
 
     allShips.flatMap(ship => {
-      ship.pilots.map(pilot => pilot.ffg -> (pilot.xws, ship.shipXWS()))
+      ship.pilots.map(pilot => pilot.ffg -> (pilot.xws, ship.xws))
     }).toMap
   }
 
