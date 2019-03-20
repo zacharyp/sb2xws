@@ -57,13 +57,12 @@ case class Pilot(
   force_side: Option[Int],
   initiative: Option[Int],
   ffg_id: String,
-  is_unique: Boolean,
+  is_unique: Option[Boolean],
   ship_type: Int
 )
 
 
 case class Slot(
-
   id: Int,
   card_set_ids: Seq[Int],
   card_type_id: Int,
@@ -74,7 +73,7 @@ case class Slot(
   name: String,
   ability_text: String,
   cost: String,
-  is_unique: Boolean,
+  is_unique: Option[Boolean],
   available_actions: Seq[Action],
   statistics: Seq[Stat],
   restrictions_raw: Option[String],
