@@ -95,7 +95,7 @@ object Squadron2XWS {
     case 17 => "force-power"
     case 18 => "configuration"
     case 19 => "tech"
-    case 1000 => "tacticalrelay"
+    case 1000 => "tactical-relay"
   }
 
 }
