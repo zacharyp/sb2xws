@@ -10,7 +10,18 @@ import play.Environment
 class Squadron2XWS @Inject() (env: Environment, xwingData: XWingDataLoader) {
   import Squadron2XWS._
 
-  def convert(squadron: Squadron): XWSSquadron = {
+  def constructVendor(squadId: String): Option[Map[String, Map[String, String]]] = {
+    Some(
+      Map(
+        "sb2xws" -> Map(
+          "builder" -> "SB2XWS",
+          "url" -> s"http://sb2xws.herokuapp.com/translate/$squadId"
+        )
+      )
+    )
+  }
+
+  def convert(squadron: Squadron, squadId: String): XWSSquadron = {
 
     val factionId = squadron.faction.id
 
@@ -57,7 +68,7 @@ class Squadron2XWS @Inject() (env: Environment, xwingData: XWingDataLoader) {
       obstacles = None,
       damagedeck = None,
       points = Some(squadron.cost.toInt),
-      vendor = None
+      vendor = constructVendor(squadId)
     )
   }
 }

@@ -25,7 +25,7 @@ class XwsController @Inject()(cc: ControllerComponents, ws: WSClient, xws: Squad
 
     complexRequest.get().map(_.body)
       .map(SquadronFormatter.parseSB)
-      .map(xws.convert)
+      .map(squadron => xws.convert(squadron, squadId))
       .map(s => Ok(Json.toJson(s)))
       .recoverWith {
         case ex => Future.successful(BadRequest(ex.getMessage))
