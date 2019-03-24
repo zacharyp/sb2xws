@@ -71,8 +71,8 @@ object Squadron2XWS {
       case 3 => "scumandvillainy"
       case 4 => "resistance"
       case 5 => "firstorder"
-      case 6 => "separatistalliance"
-      case 7 => "galacticrepublic"
+      case 6 => "galacticrepublic"
+      case 7 => "separatistalliance"
     }
   }
 
@@ -86,7 +86,7 @@ object Squadron2XWS {
     case 6 => "missile"
     case 7 => ""
     case 8 => "crew"
-    case 10 => "amd"
+    case 10 => "astromech"
     case 12 => "device"
     case 13 => "illicit"
     case 14 => "modification"
