@@ -11,7 +11,7 @@ case class XWD2Upgrade(
 
 case class XWD2Pilot(
   name: String,
-  ffg: Int,
+  ffg: Option[Int],
   xws: String
 )
 
