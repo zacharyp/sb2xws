@@ -35,7 +35,7 @@ class XWingDataLoader @Inject()(env: Environment) {
     extractStrings(relativePath).flatMap(str => {
       val t = Try(Json.parse(str).validate[XWD2Ship].get)
 //      if (t.isFailure) {
-//        println(s"failed to parse: \n$str\n") // first order and resistance for now
+//        println(s"failed to parse: \n$str\n")
 //      }
       t.toOption
     })
@@ -56,7 +56,7 @@ class XWingDataLoader @Inject()(env: Environment) {
     val allShips = rebelPilots ++ imperialPilots ++ scumPilots ++ resistancePilots ++ firstOrderPilots ++ separatistAlliance ++ galacticRepublic
 
     allShips.flatMap(ship => {
-      ship.pilots.map(pilot => pilot.ffg -> (pilot.xws, ship.xws))
+      ship.pilots.flatMap(pilot => pilot.ffg.map(ffg => ffg -> (pilot.xws, ship.xws)))
     }).toMap
   }
 
