@@ -1,3 +1,7 @@
+# PROJECT IS DEPRECATED
+
+Use https://github.com/zacharyp/squad2xws instead
+
 # sb2xws
 
 Translates X-wing squadbuilder id to XWS JSON
